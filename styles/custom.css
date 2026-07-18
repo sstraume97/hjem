@@ -54,6 +54,15 @@
 main.content, #quarto-content {
   max-width: 1120px;
 }
+#quarto-content.page-layout-full {
+  max-width: none;
+}
+#quarto-content.page-layout-full main.content {
+  max-width: none;
+  grid-column: screen-start / screen-end;
+  padding-left: var(--space-5);
+  padding-right: var(--space-5);
+}
 
 .navbar-brand { color: var(--color-primary) !important; }
 
